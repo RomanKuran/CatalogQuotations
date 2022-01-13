@@ -15,7 +15,7 @@ class CreateServicesTable extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->id();
-            $table->string('source', 250)->unique();
+            $table->string('service', 250)->unique();
             $table->string('placeholder', 250);
             $table->text('validation');
             $table->timestamps();

@@ -1,0 +1,9 @@
+.list-quotes{
+    display: flex;
+    flex-wrap: wrap;
+    .quotes-item{
+        margin: 2px;
+        padding: 5px;
+        background-color: #dedeff;
+    }
+}
