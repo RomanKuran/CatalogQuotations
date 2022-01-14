@@ -20,7 +20,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary js-create-quote" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <button type="submit" form="create-quote-form" class="btn btn-primary js-create-quote">Save changes</button>
             </div>
         </div>

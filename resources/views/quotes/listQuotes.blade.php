@@ -14,6 +14,7 @@
 
     @include('modals.createQuote')
     @include('modals.listServices')
+    @include('modals.sendQuote')
 
     @push('custom-styles')
         <link href="{{ asset('css/quotes.css') }}" rel="stylesheet">
@@ -25,6 +26,7 @@
 
     @push('routes')
         let route_create_quote = "{{ route('createQuotes') }}";
+        let get_regular_validation = "{{ route('getRegularValidation') }}";
     @endpush
 
 @endsection
