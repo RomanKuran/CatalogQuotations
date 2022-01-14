@@ -19,4 +19,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/', [App\Http\Controllers\Quotes\QuotesController::class, 'quotes'])->name('quotes');
+Route::get('/create_quotes', [App\Http\Controllers\Quotes\CreateQuotesController::class, 'create'])->name('createQuotes');
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/get_regular_validation', [App\Http\Controllers\Quotes\GetRegularValidationController::class, 'get'])->name('getRegularValidation');
